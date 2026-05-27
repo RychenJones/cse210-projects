@@ -39,6 +39,5 @@ class Program
             Console.Write($"String: {newFraction5.GetFractionString()}\t\t");
             Console.WriteLine($"Decimal: {newFraction5.GetDecimalValue()}");
         }
-
     }
 }
