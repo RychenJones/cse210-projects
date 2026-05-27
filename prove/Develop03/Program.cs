@@ -1,14 +1,11 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
+// for, foreach, do while W3
+// arrays - Microsoft learning
+// stretch - only choose from shown words
 
-// Name: Rychen Jones
-// Date: 5/26/26
-// Sources:
-//     Class documentation: https://byui-cse.github.io/cse210-course-2023/unit03/develop.html
-//     W3 Schools
-//     Microsoft Learning
-//     Stack Overflow
+// multiple verses
 
 class Program
 {
@@ -16,12 +13,16 @@ class Program
     {
         string RJbook = "Proverbs";
         int RJchapter = 3;
-        int[] verses = [5, 6];
+        int[] RJverses = [5, 6];
         string RJverseText = "Trust in the Lord more words to give a chance to test ha ha";
         string RJinput = "";
 
-        RJReference RJnewReference = new RJReference(RJbook, RJchapter, verses);
         RJScripture RJnewScripture = new RJScripture(RJverseText);
+        RJReference RJnewReference = new RJReference(RJbook, RJchapter, RJverses.First());
+        if (RJverses.Count() > 1)
+        {
+            RJnewReference = new RJReference(RJbook, RJchapter, RJverses.First(), RJverses.Last());
+        }
         
         Console.Clear();
         Console.WriteLine("Welcome to the program.");

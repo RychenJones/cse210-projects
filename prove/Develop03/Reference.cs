@@ -10,19 +10,17 @@ public class RJReference
         _RJchapter = 0;
         _RJverse = "";
     }
-    public RJReference(string RJbook, int RJchapter, int[] RJverse)
+    public RJReference(string RJbook, int RJchapter, int RJverse)
     {
-        if (RJverse.Count() == 1)
-        {
-            _RJverse = (RJverse.First()).ToString();
-        }
-        else
-        {
-            _RJverse = $"{RJverse.First()}-{RJverse.Last()}";
-        }
-
         _RJbook = RJbook;
         _RJchapter = RJchapter;
+        _RJverse = RJverse.ToString();
+    }
+    public RJReference(string RJbook, int RJchapter, int RJstartVerse, int RJendVerse)
+    {
+        _RJbook = RJbook;
+        _RJchapter = RJchapter;
+        _RJverse = $"{RJstartVerse}-{RJendVerse}";
     }
 
     public string RJReturnReference()
