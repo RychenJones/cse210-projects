@@ -4,12 +4,6 @@ public class RJReference
     private int _RJchapter;
     private string _RJverse;
 
-    public RJReference()
-    {
-        _RJbook = "";
-        _RJchapter = 0;
-        _RJverse = "";
-    }
     public RJReference(string RJbook, int RJchapter, int RJverse)
     {
         _RJbook = RJbook;

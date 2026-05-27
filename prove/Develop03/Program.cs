@@ -1,11 +1,15 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-// for, foreach, do while W3
-// arrays - Microsoft learning
-// stretch - only choose from shown words
-
-// multiple verses
+/* 
+Name: Rychen Jones
+Date: 5/26/26
+Sources:
+    Class documentation: https://byui-cse.github.io/cse210-course-2023/unit03/develop.html
+    W3 Schools
+    Microsoft Learning
+    Stack Overflow
+*/
 
 class Program
 {
