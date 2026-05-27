@@ -9,6 +9,8 @@ Sources:
     W3 Schools
     Microsoft Learning
     Stack Overflow
+
+Creativity: 3 words are hidden only from the unhidden words.
 */
 
 class Program
