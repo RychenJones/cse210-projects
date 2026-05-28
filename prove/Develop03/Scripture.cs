@@ -2,6 +2,10 @@ using System.CodeDom.Compiler;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 
+/*
+This handles most things happening with the scripture.
+It calls Reference and Word to compute values and returns it to main.
+*/
 public class RJScripture
 {   
     private string _RJverseText;
@@ -9,12 +13,9 @@ public class RJScripture
     private List<RJWord> _RJwordsList;
     private int _RJnumberHidden;
 
-    public int RJgetListLength()
-    {
-        return _RJwordsList.Count();
-    }
     public RJScripture(string RJverse)
     {
+        /* Constuctor for 1 value */
         _RJwordsList = new List<RJWord>();
         _RJverseText = RJverse;
         _RJsplitWords = _RJverseText.Split(' ');
@@ -26,13 +27,20 @@ public class RJScripture
         _RJnumberHidden = 0;
     }
 
+    public int RJgetListLength()
+    {
+        /* Get the length of the word list */
+        return _RJwordsList.Count();
+    }
     public int RJgetNumberHidden()
     {
+        /* Get the amount of words that are hidden */
         return _RJnumberHidden;
     }
 
     public void RJHideWords()
     {
+        /* Call Word to hide 3 random words from those that are unhidden */
         int i = 0;
         while (i < 3)
         {
@@ -52,6 +60,7 @@ public class RJScripture
     }
     public string RJReturnVerse()
     {
+        /* Return the verse with hidden words shown with underscores */
         string RJverse = "";
 
         foreach (RJWord word in _RJwordsList)

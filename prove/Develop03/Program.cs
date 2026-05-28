@@ -17,6 +17,9 @@ class Program
 {
     static void Main(string[] args)
     {
+        /*
+        Run the program as long as there are still words to hide and the user input is not "q"
+        */
         string RJbook = "Proverbs";
         int RJchapter = 3;
         int[] RJverses = [5, 6];
