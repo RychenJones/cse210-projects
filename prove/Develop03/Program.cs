@@ -23,7 +23,9 @@ class Program
         string RJbook = "Proverbs";
         int RJchapter = 3;
         int[] RJverses = [5, 6];
-        string RJverseText = "Trust in the Lord more words to give a chance to test ha ha";
+        string RJverseText = "Trust in the Lord with all thine heart; " + 
+                            "And lean not unto thine own understanding. "+
+                            "In all thy ways acknowledge him, And he shall direct thy paths.";
         string RJinput = "";
 
         RJScripture RJnewScripture = new RJScripture(RJverseText);
