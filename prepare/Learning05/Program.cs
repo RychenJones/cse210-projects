@@ -27,7 +27,8 @@ class Program
         foreach (Shape i in list)
         {
             double area = i.GetArea();
-            Console.WriteLine(area);
+            string color = i.GetColor();
+            Console.WriteLine($"{area}, {color}");
         }
     }
 }
